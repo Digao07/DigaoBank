@@ -1,3 +1,4 @@
-export const login = (): void => {
-    alert('Bem vinda!')
-}
+export const login = () => {
+    alert('Bem-vindo ao Digao Bank!');
+  };
+  
