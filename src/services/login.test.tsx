@@ -1,12 +1,22 @@
-// src/services/login.test.ts
+// src/services/__tests__/login.test.ts
 import { login } from './login';
 
-// Mocking the alert function
-global.alert = jest.fn();
-
 describe('login', () => {
-  it('deve exibir uma mensagem de boas-vindas ao ser chamado', () => {
-    login();
-    expect(global.alert).toHaveBeenCalledWith('Bem-vindo ao Digao Bank!');
+  const mockEmail = 'rodrigo@hotmail.com';
+  const mockPassword = '123456';
+
+  it('deve retornar true caso o email e a senha sejam válidos', async () => {
+    const response = await login(mockEmail, mockPassword);
+    expect(response).toBeTruthy();
+  });
+
+  it('deve retornar false caso o email seja inválido', async () => {
+    const response = await login('email@invalido.com', mockPassword);
+    expect(response).toBeFalsy();
+  });
+
+  it('deve retornar false caso a senha seja inválida', async () => {
+    const response = await login(mockEmail, 'senha_invalida');
+    expect(response).toBeFalsy();
   });
 });
