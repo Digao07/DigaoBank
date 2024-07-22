@@ -25,7 +25,7 @@ FrontEnd da um Homepage de um banco, incluindo login e autenticação, TDD. Depl
 ## 🔖 Layout
 
 <p align="center">
-<https://digaobank.netlify.app/ />
+https://digaobank.netlify.app/
 </p> 
 
 ## :memo: Licença
