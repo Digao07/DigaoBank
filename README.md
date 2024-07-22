@@ -1,7 +1,7 @@
 # Desenvolvendo o Dio Bank
 desenvolvido por [Rodrigo Barros](https://github.com/Digao07)
 
-## Front-end de um website de um banco
+## Front-end de um Homepage de um banco feito com React
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
